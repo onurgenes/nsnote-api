@@ -16,6 +16,25 @@ app.get('/hello', (req, res) => {
     res.status(200).json({hello: 'from other side'});
 });
 
+app.post('/note', (req, res) => {
+    var body = _.pick(req.body, ['name', 'owner', 'detail']);
+    var note = new Note(body);
+
+    note.save().then((note) => {
+        res.status(200).send(note);
+    }, (e) => {
+        res.status(400).json({ error: error.toString() });
+    });
+});
+
+app.get('/note', (req, res) => {
+    Note.find().then((notes) => {
+        res.status(200).send(notes);
+    }, (e) => {
+        res.status(400).json({ error: error.toString() });
+    })
+})
+
 app.listen(port, () => {
     console.log(`nsnote-api listening on port ${port}!`)
 });
