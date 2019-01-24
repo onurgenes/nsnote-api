@@ -5,14 +5,16 @@ const {ObjectID} = require('mongodb');
 const fs = require('fs');
 const {mongoose} = require('./db/mongoose');
 
+const {Note} = require('./models/note');
+
 // create app
 const app = express();
 app.use(bodyParser.json());
 var port = process.env.PORT || 8000; // port
 
-
-
-
+app.get('/hello', (req, res) => {
+    res.status(200).json({hello: 'from other side'});
+});
 
 app.listen(port, () => {
     console.log(`nsnote-api listening on port ${port}!`)
