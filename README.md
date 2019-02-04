@@ -67,3 +67,11 @@ nodemon server.js
 ```sh
 node server.js
 ```
+
+# Using Insomnia for testing manually
+
+I am currentlu using [Insomnia](https://insomnia.rest/) instead of [Postman](https://www.getpostman.com/) because [Insomnia](https://insomnia.rest/)'s UI looks more clear to me.
+
+If you want to use Insomnia, you can use `NSNote_2019-02-04.json` profile.
+
+Just import the profile and you are good to go.
