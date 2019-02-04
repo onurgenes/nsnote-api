@@ -5,13 +5,13 @@ NodeJS API for NSNote app
 
 Let's update the HomeBrew
 
-```zsh
+```sh
 brew update
 ```
 
 Install MongoDB binaries
 
-```zsh
+```sh
 brew install mongodb
 ```
 
@@ -19,13 +19,13 @@ brew install mongodb
 
 Install NodeJS from HomeBrew
 
-```zsh
+```sh
 brew install node
 ```
 
 ## Install nodemon (Optional)
 
-```zsh
+```sh
 npm install -g nodemon
 ```
 
@@ -34,31 +34,36 @@ npm install -g nodemon
 ## Start MongoDB
 Create directory for storing data and start MongoDB service with that directory
 
-```zsh
+```sh
 mongod --dbpath <path to data directory>
 ```
 
 ## Start `nsnote-api`
 On another Terminal window
-```zsh
+```sh
 git clone git@github.com:onurgenes/nsnote-api.git
 ```
 
 cd into directory
 
-```zsh
+```sh
 cd nsnote-api
+```
+
+Install dependencies
+```sh
+npm install
 ```
 
 Now you can start server:
 
 ## If you installed Nodemon (Recommended)
-```zsh
+```sh
 nodemon server.js
 ```
 
 ## Or without Nodemon
 
-```zsh
+```sh
 node server.js
 ```
