@@ -29,9 +29,10 @@ server.get('/hello', (req, res) => {
 //
 
 server.post('/note', authenticate, (req, res) => {
-    var body = _.pick(req.body, ['name', 'owner', 'detail']);
+    var body = _.pick(req.body, ['name', 'detail']);
     var note = new Note(body);
-
+    note.owner = req.user.username;
+    
     note.save().then((note) => {
         res.status(200).send(note);
     }, (e) => {
