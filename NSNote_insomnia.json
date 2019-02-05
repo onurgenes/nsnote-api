@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-02-04T13:38:32.266Z",
+	"__export_date": "2019-02-05T17:34:11.260Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -67,13 +67,13 @@
 				{
 					"id": "pair_baf8b8be220b4c069e01d5d4724d43bd",
 					"name": "x-auth",
-					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzU4M2Y3M2ViMDJjYjA5YTIyMjU1YzMiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQ5Mjg3Mjg0fQ.ArbD5CJZXTSztAHu4dLSe9qXpk_sTAv8NVJgh8QSvtA"
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzU5YzQxY2JhYWU1YTFmNTE0ZTczODEiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQ5Mzg2NzgwfQ.oLWX24cbXimqW1oe2KjKaFaTOLX21ymBss_mgWADuAE"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1548350214098,
 			"method": "GET",
-			"modified": 1549287308281,
+			"modified": 1549387386564,
 			"name": "/note",
 			"parameters": [],
 			"parentId": "wrk_ec7ad444fc144ccab4945949c961e9ba",
@@ -91,7 +91,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"name\": \"First note\",\n\t\"owner\": \"OnurG\",\n\t\"detail\": \"Lorem ipsum bilmem ne\"\n}\n"
+				"text": "{\n\t\"name\": \"Second note\",\n\t\"detail\": \"Funny bla bla\"\n}\n"
 			},
 			"created": 1548350232480,
 			"description": "",
@@ -104,13 +104,13 @@
 				{
 					"id": "pair_f8afd2dcf88d48ab826a45b60bf2c9f2",
 					"name": "x-auth",
-					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzU4M2Y3M2ViMDJjYjA5YTIyMjU1YzMiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQ5Mjg3Mjg0fQ.ArbD5CJZXTSztAHu4dLSe9qXpk_sTAv8NVJgh8QSvtA"
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YzU5YzQxY2JhYWU1YTFmNTE0ZTczODEiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQ5Mzg2NzgwfQ.oLWX24cbXimqW1oe2KjKaFaTOLX21ymBss_mgWADuAE"
 				}
 			],
 			"isPrivate": false,
 			"metaSortKey": -1548350232480,
 			"method": "POST",
-			"modified": 1549287298612,
+			"modified": 1549387406259,
 			"name": "/note",
 			"parameters": [],
 			"parentId": "wrk_ec7ad444fc144ccab4945949c961e9ba",
